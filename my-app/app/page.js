@@ -101,7 +101,7 @@ export default function Home() {
 
   // Snake Setup
   const [snake, setSnake] = useState({
-    position: { x: 15, y: 0 }, // Initialize snake at position (0, 0)
+    position: { x: 0, y: 0 }, // Initialize snake at position (0, 0)
     direction: "right",
   });
 
@@ -188,6 +188,7 @@ export default function Home() {
           marginBottom: "20px",
         }}
       >
+        <option value="2025">2025</option>
         <option value="2024">2024</option>
         <option value="2023">2023</option>
         <option value="2022">2022</option>
@@ -228,7 +229,7 @@ export default function Home() {
       )}
 
       <div
-        className="grid-container"
+        className="grid-container relative"
         style={{
           display: "grid",
           gridTemplateRows: "repeat(7, 12px)",
