@@ -1,3 +1,3 @@
 # snake-game
 
-taking a break
+total time was around 3h 40mins

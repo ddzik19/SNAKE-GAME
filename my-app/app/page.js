@@ -260,7 +260,7 @@ export default function Home() {
             top: `${snake.position.y * 12}px`, // Use 12px to align with grid size
             width: "12px",
             height: "12px",
-            backgroundColor: "green",
+            backgroundColor: "#800080",
           }}
         />
       </div>
