@@ -264,16 +264,6 @@ export default function Home() {
           }}
         />
       </div>
-
-      {/* Display the first level 1 target */}
-      {targetTile && (
-        <div>
-          <p>
-            First target tile: {targetTile.date} with{" "}
-            {targetTile.contributionCount} contributions
-          </p>
-        </div>
-      )}
     </div>
   );
 }
