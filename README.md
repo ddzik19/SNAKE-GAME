@@ -1,3 +1,7 @@
-# snake-game
+# Damian Dzik - snake-game
 
-total time was around 3h 40mins
+### Stack
+- Nextjs
+- GraphQL
+
+

@@ -56,12 +56,17 @@ export default function Home() {
   // Query to fetch contributions
   const { loading, error, data } = useQuery(GET_CONTRIBUTIONS, {
     variables: {
-      login: submittedUsername, // Pass the submitted username dynamically
+      login: submittedUsername,
       from: startDate,
       to: endDate,
     },
-    skip: !submittedUsername, // Skip the query if no username is submitted
+    skip: !submittedUsername,
+    onError: (err) => console.error("GraphQL Error:", err),
   });
+  if (error) {
+    console.error("Error occurred:", error.message);
+    return <p>Error fetching data: {error.message}</p>;
+  }
 
   const [tooltip, setTooltip] = useState({
     visible: false,
