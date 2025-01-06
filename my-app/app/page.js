@@ -49,7 +49,7 @@ const createGrid = (data) => {
 export default function Home() {
   const [username, setUsername] = useState(""); // State for storing the input username
   const [submittedUsername, setSubmittedUsername] = useState(""); // State to store the submitted username
-  const [selectedYear, setSelectedYear] = useState("2024"); // State for the selected year
+  const [selectedYear, setSelectedYear] = useState("2025"); // State for the selected year
 
   const { startDate, endDate } = getDateRangeForYear(selectedYear); // Get date range based on selected year
 
